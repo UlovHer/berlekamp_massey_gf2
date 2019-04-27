@@ -12,13 +12,13 @@ using namespace NTL;
 
 using json = nlohmann::json;
 
-string to_string(vec_GF2 input) {
+string to_string(const vec_GF2& input) {
     stringstream buffer;
     buffer << input;
     return buffer.str();
 }
 
-string to_string(GF2X input) {
+string to_string(const GF2X& input) {
     stringstream buffer;
     buffer << input;
     return buffer.str();
